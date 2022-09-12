@@ -1,11 +1,13 @@
 /**
  * 
  */
-package com.example.DrinkMachine;
+package com.example.DrinkMachine.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+
+import com.example.DrinkMachine.form.ItemFomr;
 
 /**
  * @author vtr03
@@ -20,9 +22,12 @@ public class DrinkMachineController {
 	}
 
 	@RequestMapping("/insert")
-	public String insert(
-			@RequestParam(name = "test", defaultValue = "テスト", required = false)String test) {
-		String text = test;
+	public String insert(@ModelAttribute ItemFomr Form) {
+		
+		
+		
+		
+		
 		
 		return "insert";
 	}

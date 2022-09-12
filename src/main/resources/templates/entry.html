@@ -6,8 +6,15 @@
 </head>
 <body>
 <form  method="post" th:action="@{/insert}">
-<input type="text" name="test" />
-<button>登録</button>
+<input type="text" th:field="*{name}" />
+<br>
+<input type="number" th:field="*{unitPrice}" />
+<br>
+<input type="number" th:field="*{count}" />
+<br>
+<input type="number" th:field="*{IsPr}" />
+<br>
+<input type="submit" value="登録"/>
 </form>
 <form  method="post" th:action="@{/}">
 <button>読込</button>
