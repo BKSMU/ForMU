@@ -39,6 +39,25 @@ public class Item implements Serializable {
     @Column(name = "unitPrice")
     private int unitPrice;
     
+    /**
+     * 数量
+     */
+    @Column(name = "count")
+    private int count;
+    
+    /**
+     * 数量
+     */
+    @Column(name = "IsPr")
+    private int IsPr;
+    
+    /**
+     * 登録日時
+     */
+    @Column(name = "RecordDate")
+    private Date RecordDate;
+    
+    
     public String getName() {
 		return name;
 	}
@@ -79,22 +98,5 @@ public class Item implements Serializable {
 		RecordDate = recordDate;
 	}
 
-	/**
-     * 数量
-     */
-    @Column(name = "count")
-    private int count;
-    
-    /**
-     * 数量
-     */
-    @Column(name = "IsPr")
-    private int IsPr;
-    
-    /**
-     * 登録日時
-     */
-    @Column(name = "RecordDate")
-    private Date RecordDate;
 
 }

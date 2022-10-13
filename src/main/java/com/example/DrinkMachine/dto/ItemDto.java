@@ -13,6 +13,9 @@ import java.util.Date;
 //アイテムクラス
 public class ItemDto {
 	
+	// コード
+	int code;
+	
 	//商品名
 	String name;
 	
@@ -27,6 +30,14 @@ public class ItemDto {
 	
 	//登録日時
 	Date RecordDate;
+
+	public int getCode() {
+		return code;
+	}
+
+	public void setCode(int code) {
+		this.code = code;
+	}
 
 	public String getName() {
 		return name;
