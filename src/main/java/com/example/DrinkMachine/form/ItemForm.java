@@ -2,7 +2,7 @@ package com.example.DrinkMachine.form;
 
 import java.util.Date;
 
-public class ItemFomr {
+public class ItemForm {
 
 	//商品名
 	private String name;
